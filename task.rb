@@ -30,7 +30,7 @@ def q4
   sports = ["サッカー", "フットサル", nil, "野球", "バスケ", nil, "バレー"]
 
   # 以下に回答を記載
-
+  sports.delete(nil)
   # 以下は変更しないで下さい
   p sports
 end
@@ -40,14 +40,23 @@ def q5
   array2 = [1, 5, 8, 10]
 
   # 以下に回答を記載
+  puts "array1 = []"
+  puts "# 実行結果"
+  p array1.empty?
 
+  puts "" #改行
+
+  puts "array2 = [1, 5, 8, 10]"
+  puts "# 実行結果"
+  p array2.empty?
 end
 
 def q6
   numbers1 = [1, 2, 3, 4, 5]
 
   # 以下に回答を記載
-
+  numbers2 = numbers1.map { |num| num * 10 }
+  p numbers2
 end
 
 def q7
